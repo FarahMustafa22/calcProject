@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table >
+        <tr>
+            <td colspan="7">
+                <input type="text" name="display" id="display" placeholder="0"/> 
+            </td>
+        </tr>
+        <tr>
+            <td> <input type="button" id="btnRad" name="operator" value="Rad" onclick="degreesToRadians()"/></td>
+            <td><input type="button"  id="btnDeg" name="operator" value="Deg" onclick="radiansToDegrees()"/></td>
+            <td><input type="button"  id="btnfact" name="operator" value="x!" onclick="factorial()"/></td>
+            <td><input type="button"  id="btnOParen" name="operator" value="(" onclick="set('(')"/></td>
+            <td><input type="button"  id="btnCParen" name="operator" value=")" onclick="set(')')" /></td>
+            <td><input type="button"  id="btnPcnt" name="operator" value="%" onclick="hund()"/></td>
+            <td><input type="button"  id="btnAc" name="operator" value="CE" onclick="ce()"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="btnInv" name="operator" value="AC" onclick="ac()"/></td>
+            <td><input type="button" id="btnSin" name="operator" value="sin" onclick="asine()"/></td>
+            <td><input type="button" id="btnIn" name="operator" value="ln" onclick="calculateWithIn()"/></td>
+            <td><input type="button" id="btn7" name="" value="7" onclick="set('7')"/></td>
+            <td><input type="button" id="btn8" name="" value="8" onclick="set('8')"/></td>
+            <td><input type="button" id="btn9" name="" value="9" onclick="set('9')"/></td>
+            <td><input type="button" id="btnDiv" name="operator" value="÷" onclick="set('/')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="btnPi" name="operator" value="π" onclick="set('3.14')"/></td>
+            <td><input type="button" id="btnCos" name="operator" value="cos" onclick=" cosine()"/></td>
+            <td><input type="button" id="btnLog" name="operator" value="log" onclick="fLog()"/></td>
+            <td><input type="button" id="btn4" name="" value="4" onclick="set('4')"/></td>
+            <td><input type="button" id="btn5" name="" value="5" onclick="set('5')"/></td>
+            <td><input type="button" id="btn6" name="" value="6" onclick="set('6')"/></td>
+            <td><input type="button" id="btnMulti" name="operator" value="×" onclick="set('*')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="btnE" name="operator" value="e" onclick="convertToExponential()"/></td>
+            <td><input type="button" id="btnTan" name="operator" value="tan" onclick="tangent()"/></td>
+            <td><input type="button" id="btnSqr" name="operator" value="√" onclick="sqrRoot()"/></td>
+            <td><input type="button" id="btn1" name="" value="1" onclick="set('1')"/></td>
+            <td><input type="button" id="btn2" name="" value="2" onclick="set('2')"/></td>
+            <td><input type="button" id="btn3" name="" value="3" onclick="set('3')"/></td>
+            <td><input type="button" id="btnEqual" name="operator" value="-" onclick="set('-')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="operator" value="Ans" onclick="answer()"/></td>
+            <td><input type="button" name="operator" value="EXP" onclick="expp()"/></td>
+            <td><input type="button" name="operator" value="^" onclick="power()"/></td>
+            <td><input type="button" name="" value="0" onclick="set('4')"/></td>
+            <td><input type="button" name="" value="." onclick="set('.')"/></td>
+            <td><input type="button" name="equal" value="=" onclick="answer()"/></td>
+            <td><input type="button" name="operator" value="+" onclick="set('+')"/></td>
+        </tr>
+    </table>
+    <script src="action.js"></script>
+    
+</body>
+</html>
